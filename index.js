@@ -1,6 +1,6 @@
 // API通信でのJSONデータ取得
 const getData = async (value) => {
-    const resp = await fetch(`https://api.sampleapis.com/ines/${value}`);
+    const resp = await fetch(`https://api.sampleapis.com/wines/${value}`);
     if (!resp.ok) {
         throw new Error("サーバーエラー");
     }
