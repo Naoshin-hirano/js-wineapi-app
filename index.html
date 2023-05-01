@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Wine Api App</title>
+        <!-- 1. CSSファイルを読み込み -->
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- 2. class属性をCSSのために指定 -->
+        <div class="wrapper">
+            <!-- タイトルの表示 -->
+            <h1 id="header">Wine API App</h1>
+
+            <!-- ワインの選択 -->
+            <div class="option">
+                <label class="q1"
+                    ><input type="radio" name="q1" value="reds" checked />
+                    赤ワイン</label
+                >
+                <label class="q1"
+                    ><input type="radio" name="q1" value="whites" />
+                    白ワイン</label
+                >
+                <label class="q1"
+                    ><input
+                        type="radio"
+                        name="q1"
+                        value="sparkling"
+                    />スパークリング</label
+                >
+                <label class="q1"
+                    ><input type="radio" name="q1" value="dessert" />
+                    デザート</label
+                >
+                <label class="q1"
+                    ><input type="radio" name="q1" value="port" /> ポート</label
+                >
+            </div>
+
+            <!-- ワイン一覧の表示 -->
+            <div id="list"></div>
+
+            <!-- ローディングの表示 -->
+            <div id="loading" class="is-hide">
+                <div class="cv-spinner">
+                    <span class="spinner"></span>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
